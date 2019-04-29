@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@keyframes fadeAndScale {
+ from { 
+     opacity:0;
+     transform: scale3d(.75,.75,1);
+ }
+ to {
+     opacity: 1;
+     transform: scale3d(1,1,1);
+     }
+ }
+
+
+
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    height: 100%
+}
+#container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 80vh;
+    animation: fadeAndScale .5s ease-in;
+
+}
+#worldmap-container {
+    width: 80%;
+}
+img {
+    width: 70px;
+    position: absolute;
+}
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+#video {
+    max-width: 100%;
+    height: auto;
+    z-index: -1000;
+    position: absolute;
+}
+
+#worldmap {
+    width: 70%;
+    z-index: -1000;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+h1 {
+    text-align: center;
+    color: #313638;
+    margin: 30px 0 50px;
+    position: absolute;
+    bottom: -25px;
+    left: 43%;
+}
+.gallery {
+    margin: 10px 50px;
+    
+}
+.gallery img {
+    width: 230px;
+    padding: 5px;
+    transition: 1s;
+
+}
+.gallery img:hover {
+    transform: scale(1.1);
+
+}
+.flag img:hover {
+    transform: scale(1.1);
+    transition: 1s;
+    border: 3px solid #EF6461;
+    cursor: pointer;
+}
+
+#cal {
+    position: absolute;
+    left: 350px;
+    top: 320px;  
+}
+#sk {
+    position: absolute;
+    left: 1070px;
+    top: 300px;
+
+}
+#ger {
+    position: absolute;
+    left: 730px;
+    top: 235px;
+ 
+}
+#navbar {
+    background:#313638;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: center;
+    padding: 10px;
+    border-bottom: 10px #707070;
+    align-items: center;
+    margin: 10px;
+  }
+.navbar-item {
+    display:flex;
+    color: #eee9e9;
+    font-size: 15px;
+    width: auto;
+    margin-right: 60px;
+    align-items: center;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;  
+}    
+  
